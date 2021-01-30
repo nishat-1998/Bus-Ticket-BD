@@ -28,15 +28,15 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main  class="main-content container">
 
         <div class="booking-content">
-            <h1>Mega City Bus</h1>
+            <h1><span>NISHAT</span> city Bus</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
 
 
-        <div class="booking-form">
+        <div id="booking-area" class="booking-form">
             <h3>Explore By Bus</h3>
 
             <div class="inputs">
@@ -116,6 +116,10 @@
             </div>
             <button id="booking" class="btn-style">Book Now</button>
         </div>
+        <div id="transaction-area">
+            <h1> <img src="images/right.png" alt=""> Congratulations,Your booking is confirmed</h1>
+            <h3>Thank You</h3>
+        </div>
     </main>
 
     <script>
@@ -159,7 +163,10 @@
     }
     const bookingBtn= document.getElementById("booking");
     bookingBtn.addEventListener("click",function(){
-        
+        const bookingArea=document.getElementById("booking-area");
+        bookingArea.style.display= "none";
+        const transactionArea=document.getElementById("transaction-area");
+        transactionArea.style.display = "block";
     })
     
     </script>

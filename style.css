@@ -35,7 +35,7 @@ nav ul li a{
     margin-left: 30px;
 }
 nav ul li a:hover, a.active{
-    background-color: #52AF3A;
+    background-color: rgb(240, 128, 147);
     border-radius: 5px;
 }
 .main-content{
@@ -44,8 +44,11 @@ nav ul li a:hover, a.active{
     gap: 70px;
     align-items: center;
 }
+span{
+    color: rgb(230, 89, 112);
+}
 .booking-content{
-    color: #fff;
+    color: rgb(247, 232, 232);
     width: 100%;
     float: left;
     margin-left: 50px;
@@ -121,4 +124,23 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+}
+#transaction-area{
+    display: none;
+}
+#transaction-area h1{
+color: rgb(0, 129, 17);
+margin-top: 70px;
+margin-left: 70px;
+font-size: 50px;
+}
+#transaction-area h3{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+#transaction-area img{
+
+   width: 50%;
+   padding-left: 150px;
 }
